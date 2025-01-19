@@ -26,6 +26,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 --]]
 
+---@meta
+
 ---@diagnostic disable
 ---@alias color_0-15 integer
 ---@alias button_0-31 integer
