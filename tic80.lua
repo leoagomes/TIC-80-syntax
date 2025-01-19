@@ -1,5 +1,6 @@
---TIC-80 Syntax from https://github.com/nesbox/TIC-80/wiki/
---This code is obtainable in https://github.com/hayattgd/TIC-80-syntax/
+-- TIC-80 Syntax from https://github.com/nesbox/TIC-80/wiki/
+-- This code is obtainable in https://github.com/leoagomes/TIC-80-syntax/,
+-- originally created by hayattgd, forked by leoagomes.
 
 --[[
 MIT License
@@ -26,26 +27,26 @@ SOFTWARE.
 --]]
 
 ---@diagnostic disable
----@class color_0-15
----@class button_0-31
----@class key_1-94
----@class sprite_0-511
----@class flag_0-7
----@class bank_0-7
----@class vbank_0-1
----@class sfx_0-63
----@class music_0-7
----@class channel_0-3
----@class note_0-95
----@class volume_0-15
----@class speed_-4-3
----@class flip_0-3
----@class rotate_0-3
----@class texsrc_0-3
----@class index_0-255
----@class bits_1_2_4_8
----@class val32_0-4294967295
----@class val8_0-255
+---@alias color_0-15 integer
+---@alias button_0-31 integer
+---@alias key_1-94 integer
+---@alias sprite_0-511 integer
+---@alias flag_0-7 integer
+---@alias bank_0-7 integer
+---@alias vbank_0-1 integer
+---@alias sfx_0-63 integer
+---@alias music_0-7 integer
+---@alias channel_0-3 integer
+---@alias note_0-95 integer
+---@alias volume_0-15 integer
+---@alias speed_-4-3 integer
+---@alias flip_0-3 integer
+---@alias rotate_0-3 integer
+---@alias texsrc_0-3 integer
+---@alias index_0-255 integer
+---@alias bits_1_2_4_8 integer
+---@alias val32_0-4294967295 integer
+---@alias val8_0-255 integer
 
 ---This function allows you to read the status of TIC's controller buttons.
 ---
@@ -246,7 +247,9 @@ function mset(x, y, tile_id) end
 ---@return boolean right
 ---@return integer scrollx
 ---@return integer scrolly
-function mouse() return 0, 0, false, false, false, 0, 0 end
+function mouse()
+	return 0, 0, false, false, false, 0, 0
+end
 
 ---This function starts playing a <strong>track</strong> created in the <a href="https://github.
 ---
@@ -516,85 +519,14 @@ function tstamp() end
 function vbank(id) end
 --------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --https://github.com/nesbox/TIC-80/wiki/BDR
-BDR()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function BDR() end
 
 --https://github.com/nesbox/TIC-80/wiki/BOOT
-BOOT()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function BOOT() end
 
 --https://github.com/nesbox/TIC-80/wiki/MENU
-MENU()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function MENU() end
 
 --https://github.com/nesbox/TIC-80/wiki/TIC
-TIC()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function TIC() end
